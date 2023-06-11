@@ -1,4 +1,4 @@
-import RecipeCard from "./RecipeCard";
+import RecipeCard from './RecipeCard.tsx';
 
 // Mock data
 const recipeData = {

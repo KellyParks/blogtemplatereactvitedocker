@@ -8,5 +8,10 @@ export default defineConfig({
     host: true, // this is required for docker's port mapping
     strictPort: true, //set to true to exit if port is already in use, instead of automatically trying the next available port
     port: 5173
-  }
+  },
+  esbuild: {
+    jsxInject: `import React from 'react'`,
+    jsxFactory: 'React.createElement',
+    // jsxFragment: 'React.Fragment'
+  },
 })

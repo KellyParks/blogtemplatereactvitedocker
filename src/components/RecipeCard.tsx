@@ -12,9 +12,10 @@ type RecipeCardProps = {
 const RecipeCard = (props: RecipeCardProps) => {
 
     const {title, imageLink, imageDescription, ingredients, directions} = props;
+    const color = 'red';
     return(
         <div>
-            <h1>{title}</h1>
+            <h1 style={{color: color}}>{title}</h1>
             <img src={imageLink} alt={imageDescription}/>
             <ul>
                 {ingredients.map((ingredient: string)=>(
